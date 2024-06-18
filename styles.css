@@ -1,0 +1,101 @@
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+#quiz-container, #result-container {
+  background: white;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 500px;
+}
+
+h1 {
+  color: #333;
+}
+
+#question-container {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#choices-container button {
+  display: block;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px auto;
+  width: 100%;
+  max-width: 200px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#choices-container button:hover {
+  background-color: #0056b3;
+}
+
+#next-button, #result-container button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#next-button:hover, #result-container button:hover {
+  background-color: #218838;
+}
+
+#result-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#result-container span {
+  font-weight: bold;
+  color: #28a745;
+}
+
+#result-message {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 600px) {
+  #quiz-container, #result-container {
+      width: 90%;
+      padding: 15px;
+  }
+
+  #choices-container button, #next-button, #result-container button {
+      width: 100%;
+      padding: 15px;
+      font-size: 14px;
+  }
+
+  #question-container {
+      font-size: 16px;
+  }
+
+  #result-container h2 {
+      font-size: 20px;
+  }
+}
